@@ -4,7 +4,7 @@ import Products from './Products'
 const Home = () => {
     const [products, setProducts] = useState([])
     const fetchData = () =>{
-        fetch('https://ecommerc-web.herokuapp.com/products/')
+        fetch('https://taka-marbo-ecommerce-production.up.railway.app/products/')
         .then(res => res.json())
         .then((products) => setProducts(products))
     }
